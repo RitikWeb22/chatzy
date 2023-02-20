@@ -41,7 +41,7 @@ function App() {
     setChatLog(updatedChatLog)
     setInput('')
 
-    const serverUrl = 'http://localhost:3080/'
+    const serverUrl = 'https://chatzy-ai.netlify.app/'
     const message = updatedChatLog.map((message) => message.message).join('\n')
 
     try {
