@@ -45,7 +45,7 @@ function App() {
     const message = updatedChatLog.map((message) => message.message).join('\n')
 
     try {
-      const response = await fetch(serverUrl, {
+      const response = await fetch(https://chatzy-ai.netlify.app/, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
