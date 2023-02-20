@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 
 const app = express()
-const port = 3080
+const port = "https://chatzy-ai.netlify.app/"
 app.post('/', async (req, res) => {
   const { message, currentModel } = req.body
   console.log(message, 'message')
@@ -40,5 +40,5 @@ app.get('/models', async (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`)
+  console.log(`Server is running ${port}`)
 })
