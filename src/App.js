@@ -24,7 +24,7 @@ function App() {
   }
 
   function getEngines() {
-    fetch('http://localhost:3080/models')
+    fetch('https://chatzy-ai.netlify.app/models')
       .then((res) => res.json())
       .then((data) => {
         console.log(data.models)
